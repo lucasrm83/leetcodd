@@ -1,7 +1,7 @@
 package Palindrome;
 
 public class PalindromeString {
-    public static void main(String[] args) {
+    public static boolean main(String[] args) {
         int x = 121;
         String s = String.valueOf(x);
         int n = s.length();
