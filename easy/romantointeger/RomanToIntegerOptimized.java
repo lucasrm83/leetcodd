@@ -14,6 +14,8 @@ public class RomanToIntegerOptimized {
                 case 'D': num = 500; break;
                 case 'M': num = 1000; break;
             }
+            //Essa é a parte chave
+            //se o num for menor que ans significa que deve ser subtraido o valor dele
             if ( num < ans) ans -= num;
 
             else ans += num;
