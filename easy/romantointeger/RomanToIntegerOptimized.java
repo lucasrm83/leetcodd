@@ -15,6 +15,7 @@ public class RomanToIntegerOptimized {
                 case 'M': num = 1000; break;
             }
             if ( num < ans) ans -= num;
+
             else ans += num;
         }
         System.out.println(ans);
