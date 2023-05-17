@@ -18,11 +18,15 @@ public class ListNode {
                 tail.next=list2;
                 list2=list2.next;
             }
+            //System.out.println(tail.val);
             tail = tail.next;
+            //System.out.println(tail.next.val);
         }
         if(list1 != null){
+            //Toda vez que tail.next = list1 ou list2 é usado ele aponta para todos os números linkados a ele
+            //tambem. se l1 = [1,2,3,4,5] l2 = [2,3,4] se digo tail.next = l1, tail é igual[0,1,2,3,4,5],
+            //até que o next seja alterado. linked list é lind0!!!
             tail.next =list1;
-            System.out.println(tail.val);
         }
         else{
             tail.next=list2;
