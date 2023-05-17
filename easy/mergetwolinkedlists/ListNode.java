@@ -22,6 +22,7 @@ public class ListNode {
         }
         if(list1 != null){
             tail.next =list1;
+            System.out.println(tail.val);
         }
         else{
             tail.next=list2;
