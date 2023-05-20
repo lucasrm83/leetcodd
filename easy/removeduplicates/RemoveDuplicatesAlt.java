@@ -9,7 +9,7 @@ public class RemoveDuplicatesAlt {
         int addIndex = 1;
 
         for(int i = 0; i < nums.length - 1; i++) {
-
+            //Verifica se o i do array é menor que o proximo, se não é repetido
             if(nums[i] < nums[i + 1]){
                 nums[addIndex] = nums[i + 1];
                 addIndex++;
