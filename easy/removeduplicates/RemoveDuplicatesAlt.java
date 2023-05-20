@@ -12,6 +12,8 @@ public class RemoveDuplicatesAlt {
             //Verifica se o i do array é menor que o proximo, se não é repetido
             if(nums[i] < nums[i + 1]){
                 nums[addIndex] = nums[i + 1];
+                //Conta caso o arrat nao seja zero o número de intens únicos e adiciona naquele index
+                //Já que não importa o que vai apos o indice k do array
                 addIndex++;
             }
         }
