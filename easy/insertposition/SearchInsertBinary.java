@@ -9,7 +9,6 @@ public class SearchInsertBinary {
         int ans = nums.length;
         while (low<=high){
             int mid = low+ (high-low)/2;
-            //System.out.println(mid);
             if (nums[mid]==target){
                 System.out.println(mid);
                 break;
